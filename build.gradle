@@ -31,7 +31,7 @@ ext {
 }
 
 dependencies {
-    implementation 'com.autoauth:autoauth:1.0.3-SNAPSHOT'
+//    implementation 'com.autoauth:autoauth:1.0.3-SNAPSHOT'
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
