@@ -10,6 +10,9 @@ import java.time.Instant;
 @Setter
 public class TelemetryEntity {
 
+    public TelemetryEntity (String satelliteId, Instant timestamp, double latitude,
+                            double longitude, double altitude, double velocity){}
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "tel_id", nullable = false)
