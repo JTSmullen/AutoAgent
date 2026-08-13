@@ -18,16 +18,7 @@ public class TelemetryConsumer {
     public void fetchTelemetryIngestion(TelemetryEvent event) {
         log.info("fetching telemetry event");
 
-        TelemetryEntity entity = new TelemetryEntity(
-                event.satelliteId(),
-                event.timestamp(),
-                event.latitude(),
-                event.longitude(),
-                event.altitude(),
-                event.velocity()
-        );
-
-        telServ.saveTelEvent(entity);
+        telServ.saveTelEvent(event);
 
         log.info("saved tel event");
 
